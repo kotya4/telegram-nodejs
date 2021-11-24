@@ -12,7 +12,6 @@ load( './chatwithkotyabot.json' )
     let offset=parameter( 'offset' ).get( 0 )
     const timeout=parameter( 'timeout' ).get( 60*60 )
     function longpoll(){
-      const pass=true
       return call( 'getUpdates', { timeout, offset } )
               .then( JSON.parse )
               .then( ( { result } )=>
