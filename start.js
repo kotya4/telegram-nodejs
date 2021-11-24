@@ -1,0 +1,5 @@
+const{ load, call }=require( './tgbot' )
+load( './chatwithkotyabot.json' )
+  .then( ()=>call( 'getMe' ) )
+  .then( console.log )
+  .catch( (...a)=>console.log( a ) )
