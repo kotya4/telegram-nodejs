@@ -4,7 +4,7 @@ chatwithkotyabot telegram bot written in js
 
 but before you do it
 
-	you must create chatwithkotyabot.json with contents:`
+	you must create `chatwithkotyabot.json` with content `
 	{
 		"token": <your telegram bot token here>
 	}
