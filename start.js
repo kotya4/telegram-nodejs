@@ -29,7 +29,7 @@ load( './chatwithkotyabot.json' )
                   )
                 )
               .then( longpoll )
-      function interpret( { message: { from: { username, first_name }, date, text } } ){
+      function interpret( { message: { from: { username }, date, text } } ){
         const randchar=()=>'0123456789abcdefgijklmnoprstuqyxz'[ Math.random()*'0123456789abcdefgijklmnoprstuqyxz'.length|0 ]
         const just_created=!( username in users )
         const user=users[ username ]=users[ username ]||
